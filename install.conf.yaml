@@ -1,0 +1,14 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.demo: demo/.demo
+
+- create:
+    - ~/Downloads
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
