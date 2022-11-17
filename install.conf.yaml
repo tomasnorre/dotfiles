@@ -16,6 +16,8 @@
 - create:
     - ~/Downloads
     - ~/Projects
+    - ~/.config
+    - ~/.config/kitty
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
