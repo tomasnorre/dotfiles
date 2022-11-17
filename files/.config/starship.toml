@@ -1,0 +1,8 @@
+format = """\
+ [╭╴](238)$env_var \
+ $all[╰─](238)$character"""
+
+[env_var.STARSHIP_DISTRO]
+format = '[$env_value](white)'
+variable = "STARSHIP_DISTRO"
+disabled = false

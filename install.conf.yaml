@@ -1,14 +1,18 @@
 - defaults:
     link:
       relink: true
+      force: true
 
 - clean: ['~']
 
 - link:
-    ~/.demo: demo/.demo
+    ~/.config/starship.toml: files/.config/starship.toml
+    ~/.config/kitty/kitty.conf: files/.config/kitty/kitty.conf
+    ~/.config/kitty/theme.conf: files/.config/kitty/theme.conf
 
 - create:
     - ~/Downloads
+    - ~/Projects
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
