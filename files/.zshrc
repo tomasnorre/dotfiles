@@ -15,11 +15,11 @@ CASE_SENSITIVE="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-autosuggestions zsh-z zsh-completions docker wd composer ssh-agent kubectl helm terraform)
 
-[[ -f $ZSH/oh-my-zsh.sh ]] &&source $ZSH/oh-my-zsh.sh
+[[ -f $ZSH/oh-my-zsh.sh ]] && source $ZSH/oh-my-zsh.sh
 
 # To enable shell completion with Zsh
 # 1Password CLI
-[[ -f /usr/bin/op ]] && eval "$(op completion zsh)"; compdef _op op
+[[ -f /usr/bin/op ]] && eval "$(op completion zsh)" && compdef _op op
 
 [[ -f ~/.zshrc_secret ]] && source ~/.zshrc_secret
 [[ -f ~/.zsh/login.zsh ]] && source ~/.zsh/login.zsh
