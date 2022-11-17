@@ -19,7 +19,7 @@ plugins=(git zsh-autosuggestions zsh-z zsh-completions docker wd composer ssh-ag
 
 # To enable shell completion with Zsh
 # 1Password CLI
-eval "$(op completion zsh)"; compdef _op op
+[[ -f /usr/bin/op ]] && eval "$(op completion zsh)"; compdef _op op
 
 [[ -f ~/.zshrc_secret ]] && source ~/.zshrc_secret
 [[ -f ~/.zsh/login.zsh ]] && source ~/.zsh/login.zsh

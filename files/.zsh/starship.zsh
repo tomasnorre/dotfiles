@@ -3,16 +3,16 @@ LFILE="/etc/lsb-release"
 MFILE="/System/Library/CoreServices/SystemVersion.plist"
 TFILE="/tmp/lsb-release"
 
-if [[ ! -f $TFILE ]]; then
+
+if [[ -f $LFILE ]]; then
+  _distro=$(awk '/^ID=/' /etc/*-release | awk -F'=' '{ print tolower($2) }')
+elif [[ ! -f $TFILE ]]; then
   lsb_release -a | grep ID | awk -F":" '{print tolower($2) }' | xargs | tee $TFILE
 elif [[ -f $TFILE ]]; then
   _distro=$(cat $TFILE)
-elif [[ -f $LFILE ]]; then
-  _distro=$(awk '/^ID=/' /etc/*-release | awk -F'=' '{ print tolower($2) }')
 elif [[ -f $MFILE ]]; then
   _distro="macos"
 fi
-
 
 
 # set an icon based on the distro
