@@ -22,6 +22,7 @@ plugins=(git zsh-autosuggestions zsh-z zsh-completions docker wd composer ssh-ag
 [[ -f ~/.zshrc_secret ]] && source ~/.zshrc_secret
 [[ -f ~/.zsh/login.zsh ]] && source ~/.zsh/login.zsh
 [[ -f ~/.zsh/aliases.zsh ]] && source ~/.zsh/aliases.zsh
+[[ -f ~/.zsh/aliases_private.zsh ]] && source ~/.zsh/aliases_private.zsh
 [[ -f ~/.zsh/starship.zsh ]] && source ~/.zsh/starship.zsh
 
 eval "$(starship init zsh)"
