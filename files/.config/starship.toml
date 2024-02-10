@@ -2,7 +2,13 @@ format = """\
  [╭╴](238)$env_var \
  $all[╰─](238)$character"""
 
+
 [env_var.STARSHIP_DISTRO]
 format = '[$env_value](white)'
 variable = "STARSHIP_DISTRO"
+disabled = false
+
+[kubernetes]
+#format = 'on [⛵ ($user on )($cluster in )$context \($namespace\)](dimmed green) '
+format = '(@$KUBECONFIG)on [☸️ ($cluster) \($namespace\)](dimmed green) '
 disabled = false

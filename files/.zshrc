@@ -26,3 +26,5 @@ plugins=(git zsh-autosuggestions zsh-z zsh-completions docker wd composer ssh-ag
 [[ -f ~/.zsh/starship.zsh ]] && source ~/.zsh/starship.zsh
 
 eval "$(starship init zsh)"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
