@@ -9,6 +9,10 @@
     ~/.config/starship.toml: files/.config/starship.toml
     ~/.config/kitty/kitty.conf: files/.config/kitty/kitty.conf
     ~/.config/kitty/theme.conf: files/.config/kitty/theme.conf
+    # Hyprland + Waybar
+    ~/.config/hypr/hyprland.conf: files/.config/hypr/hyprland.conf
+    ~/.config/waybar/config.jsonc: files/.config/waybar/config.jsonc
+    ~/.config/waybar/style.css: files/.config/waybar/style.css
     # Files Related to ZSH
     ~/.zsh: files/.zsh
     ~/.zshrc: files/.zshrc
