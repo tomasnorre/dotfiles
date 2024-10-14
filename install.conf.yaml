@@ -19,6 +19,10 @@
     ~/.zsh: files/.zsh
     ~/.zshrc: files/.zshrc
 
+    # bin Files
+    ~/bin/install-fonts.sh: files/bin/install-fonts.sh
+    ~/bin/install-php.sh: files/bin/install-php.sh
+
 - create:
     - ~/Downloads
     - ~/Projects
