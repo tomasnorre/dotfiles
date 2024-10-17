@@ -26,16 +26,38 @@
     },
     "disable-scroll": true,
     "all-outputs": true,
-    "format": "{name}: {icon}",
+    "format": "{name} {windows}  ",
     
-    "format-icons": {
+    //"format-icons": {
       //"1": "",
       //"2": "",
       //"3": "",
       //"4": "",
-      "active": "",
-      "default": ""
-    }
+      //"active": "",
+      //"default": ""
+    //},
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "on-click": "activate",
+        "window-rewrite-default": "",
+        "window-rewrite": {
+        "class<firefox>": "", // Windows whose classes are "firefox"
+        "class<firefox> title<.*github.*>": "", // Windows whose class is "firefox" and title contains "github"
+        "class<firefox> title<.*twitch|youtube.*>": "",
+        "class<kitty>": "",
+        //"class<org.kde.konsole>": "",
+        "codium": "",
+        "phpstorm": "",
+        "pycharm": "",
+        "spotify": "",
+        //"class<thunderbird>": "",
+        //"class<vlc>": "",
+        "class<org.gnome.Nautilus>": "",
+        "class<libreoffice-draw>": "",
+        "class<libreoffice-writer>": "",
+        "class<libreoffice-calc>": "",
+        "class<libreoffice-impress>": ""
+        }
   },
   "keyboard-state": {
     "numlock": true,

@@ -29,3 +29,13 @@ eval "$(starship init zsh)"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH:$HOME/bin"
 eval "$(oh-my-posh init zsh)"
+
+function XdebugOff() {
+    export XDEBUG_SESSION=xdebug_is_great
+    export XDEBUG_MODE=off
+}
+
+function XdebugOn() {
+    export XDEBUG_SESSION=xdebug_is_great
+    export XDEBUG_MODE=debug
+}
