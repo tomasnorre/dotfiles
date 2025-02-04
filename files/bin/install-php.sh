@@ -1,7 +1,8 @@
 #!/bin/sh
 
-PHP_VERSIONS='8.1 8.2 8.3'
-PHP_EXTS='cli common curl gmp intl mbstring mysql opcache readline soap sqlite3 xml zip pgsql'
+PHP_VERSIONS='8.1 8.2 8.3 8.4'
+PHP_EXTS='mongodb cli common curl gmp intl mbstring mysql opcache readline soap sqlite3 xml zip pgsql xdebug'
+#PHP_EXTS='cli common curl intl soap xml zip'
 TOTAL="";
 
 for ext in $PHP_EXTS; do 
