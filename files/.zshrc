@@ -19,7 +19,7 @@ CASE_SENSITIVE="true"
 plugins=(git zsh-autosuggestions zsh-z docker wd composer ssh-agent kubectl helm terraform)
 
 fpath+="${ZSH_CUSTOM:-"$ZSH/custom"}/plugins/zsh-completions/src"
-source ".oh-my-zsh/oh-my-zsh.sh"
+source "$HOME/.oh-my-zsh/oh-my-zsh.sh"
 
 #[[ -f $ZSH/oh-my-zsh.sh ]] && source $ZSH/oh-my-zsh.sh
 
@@ -31,7 +31,7 @@ source ".oh-my-zsh/oh-my-zsh.sh"
 
 eval "$(starship init zsh)"
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH:$HOME/bin"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH:$HOME/bin:$HOME/go/bin"
 #eval "$(oh-my-posh init zsh)"
 
 export typo3DatabaseName='crawler'
