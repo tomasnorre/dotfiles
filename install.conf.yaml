@@ -13,8 +13,8 @@
     ~/.config/hypr/hyprland.conf: files/.config/hypr/hyprland.conf
     ~/.config/waybar/config.jsonc: files/.config/waybar/config.jsonc
     ~/.config/waybar/style.css: files/.config/waybar/style.css
+    ~/.config/waybar/launch.sh: files/.config/waybar/launch.sh
     ~/.config/rofi/config.rasi: files/.config/rofi/config.rasi
-    ~/bin/launch-waybar.sh: files/bin/launch-waybar.sh
     # Files Related to ZSH
     ~/.zsh: files/.zsh
     ~/.zshrc: files/.zshrc
