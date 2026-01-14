@@ -11,9 +11,6 @@
   "modules-right": [
     "idle_inhibitor",
     "pulseaudio",
-    "network",
-    "cpu",
-    "memory",
     "clock",
     "tray",
     "custom/power"
