@@ -31,7 +31,7 @@ source "$HOME/.oh-my-zsh/oh-my-zsh.sh"
 
 eval "$(starship init zsh)"
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH:$HOME/bin:$HOME/go/bin"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH:$HOME/bin:$HOME/go/bin:$HOME/.config/composer/vendor/bin"
 #eval "$(oh-my-posh init zsh)"
 
 export typo3DatabaseName='crawler'
