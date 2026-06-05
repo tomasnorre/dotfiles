@@ -39,6 +39,7 @@
         "window-rewrite-default": " ",
         "window-rewrite": {
         "class<firefox>": " ", // Windows whose classes are "firefox"
+        "class<chromium>": "", // Windows whose classes are "chromium"
         "class<firefox> title<.*github.*>": " ", // Windows whose class is "firefox" and title contains "github"
         "class<firefox> title<.*twitch|youtube.*>": " ",
         "class<kitty>": " ",
