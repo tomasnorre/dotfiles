@@ -389,3 +389,52 @@ font-weight: normal;
     border-left: solid;
     border-left-width: 0.5;
 }
+
+/* Style for Audio */ 
+#submap,
+#battery,
+#bluetooth,
+#network,
+#cpu,
+#memory,
+#tray,
+#idle_inhibitor,
+#volume {
+  border-radius: 8px;
+  padding: 5px 8px;
+  background: rgba(39, 39, 42, 1);
+  margin: 5px 10px 5px 0px;
+}
+
+#idle_inhibitor {
+    background: none;
+}
+
+#pulseaudio-slider {
+  padding: 0px;
+  margin: 0px;
+  margin-left: 8px;
+}
+
+#pulseaudio-slider slider {
+  all: unset;
+  min-height: 0;
+  min-width: 0;
+  opacity: 0;
+  background-image: none;
+  border: none;
+  box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+  min-height: 8px;
+  min-width: 75px;
+  border-radius: 5px;
+  background: rgba(63, 63, 70, 1);
+}
+
+#pulseaudio-slider highlight {
+  min-width: 10px;
+  border-radius: 5px;
+  background: rgba(117, 241, 250, 1);
+}
