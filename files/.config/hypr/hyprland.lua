@@ -250,7 +250,7 @@ hl.device({
 ---- KEYBINDINGS ----
 ---------------------
 
-local mainMod = "CTRL" -- Sets "Windows" key as main modifier
+local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 local secondMod = "SUPER + SHIFT" 
 
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
@@ -261,7 +261,7 @@ hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(launcher))
 hl.bind(secondMod .. " + R", hl.dsp.exec_cmd(runner))
 
 
-hl.bind(mainMod .. " + C", hl.dsp.window.close())
+hl.bind(secondMod .. " + C", hl.dsp.window.close())
 -- closeWindowBind:set_enabled(false)
 hl.bind(secondMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 
