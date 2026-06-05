@@ -30,6 +30,8 @@ source "$HOME/.oh-my-zsh/oh-my-zsh.sh"
 [[ -f ~/.zsh/starship.zsh ]] && source ~/.zsh/starship.zsh
 
 eval "$(starship init zsh)"
+setopt NO_HUP
+setopt NO_CHECK_JOBS
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH:$HOME/bin:$HOME/go/bin:$HOME/.config/composer/vendor/bin"
 #eval "$(oh-my-posh init zsh)"
