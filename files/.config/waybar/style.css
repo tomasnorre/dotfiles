@@ -1,31 +1,25 @@
 * {
-    font-family: "JetBrains Mono Nerd Font Propo";
-    /*font-family: "JetBrainsMono Nerd Font";*/
+    font-family: "JetBrainsMono Nerd Font Propo";
     font-weight: bold; 
-    font-size: 15px;
+    font-size: 13px;
 }
 
 #custom-notification {
   font-family: "JetBrains Mono Nerd Font";
-  font-size: 17px;
  color: #A1BDCE;
  margin: 2px 0px 0px 0px;
 }
 
 window#waybar {
     background: #0F0F17; 
-  /*  border-radius: 15px; */
- /*  border: 2px solid #124323; */
-/* border: 0px solid #A1BDCE; */
  border: 3px solid rgba(255, 255, 255, 0.1);
- border-radius: 10px;
+ border-radius: 5px;
 }
 
 
 tooltip {
         background: #171717;
         color: #A1BDCE;
-        font-size: 13px;
         border-radius: 7px;
        border: 2px solid #101a24;
 
@@ -53,20 +47,15 @@ background: rgba(23, 23, 23, 0.0);
     transition: 0.2s ease;
     padding-left: 4px;
     padding-right: 4px;
- /*   animation: ws_normal 20s ease-in-out 1; */
 }
 
 
 
 #workspaces button.active {
-
- 
-  /* background-image: url("/home/anik/Documents/bar1.png");*/
     color: #A1BDCE;   
     transition: all 0.3s ease;
     padding-left: 4px;
     padding-right: 4px;
-  /*  transition: all 0.4s cubic-bezier(.55,0.68,.48,1.682); */
 }
 
 #workspaces button:hover {
@@ -79,7 +68,6 @@ background: rgba(23, 23, 23, 0.0);
 #taskbar button {
     box-shadow: none;
 	text-shadow: none;
-	font-size: 4px;
     padding: 0px;
     border-radius: 9px;
     margin-bottom: 3px;
@@ -113,7 +101,6 @@ background: rgba(23, 23, 23, 0.0);
 #tray menu * {
     min-height: 16px;
     font-weight: bold;
-    font-size: 13px;
     color: #9488e3;
 }
 
@@ -131,14 +118,12 @@ opacity: 0.0;
 
 
 #custom-mouse{
-font-size: 14px;
 margin-bottom: 6px;
 background:  #161320;
 }
 
 
 #custom-power{
-    font-size: 15px;
     color: #FFFFFF;
     background:  rgba(22, 19, 32, 0.9);
     margin: 6px 0px 6px 0px;
@@ -150,7 +135,6 @@ background:  #161320;
     color: #2096C0;
     background: rgba(23, 23, 23, 0.0);
     font-weight: normal;
-    font-size: 19px;
     margin: 1px 0px 0px 0px;
     padding-left: 0px;
     padding-right: 2px;
@@ -168,7 +152,6 @@ background:  #161320;
 }
 #battery{
     font-weight: normal;
-    font-size: 22px;
     color: #a6d189;
     background:  rgba(23, 23, 23, 0.0);
     opacity: 1;
@@ -189,7 +172,6 @@ background: @bar-bg;
 }
 #clock{
     color: #A1BDCE;
-    font-size: 15px;
     font-weight: 900;
     font-family: "JetBrains Mono Nerd Font";
     background: rgba(23, 23, 23, 0.0);
@@ -202,7 +184,6 @@ background: @bar-bg;
 }
 #pulseaudio{
 font-weight: normal;
-font-size: 18px;
 color: #6F8FDB;
     background:  rgba(22, 19, 32, 0.0);
     opacity: 1;
@@ -212,7 +193,6 @@ color: #6F8FDB;
 }
 #cpu{
 font-weight: normal;
-font-size: 22px;
 color: #915CAF;
 }
 #custom-led{
@@ -229,7 +209,6 @@ margin-right: 6px;
 #language,
 #memory{
 font-weight: normal;
-font-size: 22px;
 color: #E4C9AF;
 }
 #mpris{
@@ -251,7 +230,6 @@ animation: repeat;
 #network{
 color: #A1BDCE;
 font-weight: normal;
-font-size: 19px;
 padding-right: 0px;
 padding-left: 4px
 }
@@ -286,7 +264,6 @@ font-family: "Martian Mono";
 color: #a6d189;
 }
 #mpris{
-font-size: 15px;
 font-weight: bold
 }
 #custom-rr_end {
@@ -382,7 +359,6 @@ font-weight: normal;
 #custom-expand {
     min-width: 25px;
     color: #A1BDCE;
-    font-size: 16px;
 }
 
 #group-minimized {
@@ -404,7 +380,6 @@ font-weight: normal;
   padding: 5px 8px;
   background: rgba(39, 39, 42, 1);
   margin: 5px 10px 5px 0px;
-  font-size: 16px;
 }
 
 #idle_inhibitor {
