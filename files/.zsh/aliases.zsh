@@ -21,3 +21,12 @@ alias kubectl-all-but-kube-system="kubectl get pods -A --field-selector=metadata
 #alias ls='lsd --group-dirs first'
 #alias ssh="kitty +kitten ssh"
 
+# Function to connect to wifi without saving to history
+wifi-connect() {
+    if [[ -z "$1" || -z "$2" ]]; then
+        echo "Usage: wifi-connect <SSID> <PASSWORD>"
+        return 1
+    fi
+
+    nmcli device wifi connect "$1" password "$2"
+}
