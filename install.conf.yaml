@@ -11,6 +11,9 @@
     ~/.config/kitty/theme.conf: files/.config/kitty/theme.conf
     # Hyprland + Waybar + Rofi
     ~/.config/hypr/hyprland.lua: files/.config/hypr/hyprland.lua
+    ~/.config/hypr/hypridle.conf: files/.config/hypr/hypridle.conf
+    ~/.config/hypr/hyprlock.conf: files/.config/hypr/hyprlock.conf
+    ~/.config/hypr/hyprpaper.conf: files/.config/hypr/hyprpaper.conf
     ~/.config/waybar/config.jsonc: files/.config/waybar/config.jsonc
     ~/.config/waybar/style.css: files/.config/waybar/style.css
     ~/.config/waybar/launch.sh: files/.config/waybar/launch.sh
