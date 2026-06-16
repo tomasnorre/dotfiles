@@ -39,6 +39,8 @@ hl.on("hyprland.start", function ()
    hl.exec_cmd("waybar")
    hl.exec_cmd("systemctl --user start hyprpolkitagent")
    hl.exec_cmd("systemctl --user enable --now hyprpaper.service ")
+   hl.exec_cmd("systemctl --user enable --now hypridle.service")
+
 end)
 
 
@@ -259,6 +261,7 @@ hl.bind(mainMod .. " + F", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(launcher))
 hl.bind(secondMod .. " + R", hl.dsp.exec_cmd(runner))
+hl.bind(secondMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
 
 
 hl.bind(secondMod .. " + C", hl.dsp.window.close())
