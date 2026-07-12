@@ -23,6 +23,7 @@ export DISTO="$_distro"
 case $_distro in
     *kali*)                  ICON="ﴣ";;
     *arch*)                  ICON="";;
+    *cachyos*)               ICON="";;
     *debian*)                ICON="";;
     *raspbian*)              ICON="";;
     *ubuntu*)                ICON="";;
