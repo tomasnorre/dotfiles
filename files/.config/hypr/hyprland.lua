@@ -21,7 +21,7 @@ hl.monitor({
 -- Set programs that you use
 local terminal    = "kitty"
 local fileManager = "nemo"
-local browser = "chromium"
+local browser = "firefox"
 local launcher = "rofi -show drun --show-icons"
 local runner = "rofi -show run"
 
