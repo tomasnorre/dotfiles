@@ -9,8 +9,6 @@ set -o emacs
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="true"
 
-
-
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -20,8 +18,6 @@ plugins=(git zsh-autosuggestions zsh-z docker wd composer ssh-agent kubectl helm
 
 fpath+="${ZSH_CUSTOM:-"$ZSH/custom"}/plugins/zsh-completions/src"
 source "$HOME/.oh-my-zsh/oh-my-zsh.sh"
-
-#[[ -f $ZSH/oh-my-zsh.sh ]] && source $ZSH/oh-my-zsh.sh
 
 [[ -f ~/.zshrc_secret ]] && source ~/.zshrc_secret
 [[ -f ~/.zsh/login.zsh ]] && source ~/.zsh/login.zsh
@@ -34,12 +30,6 @@ setopt NO_HUP
 setopt NO_CHECK_JOBS
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH:$HOME/bin:$HOME/go/bin:$HOME/.config/composer/vendor/bin"
-#eval "$(oh-my-posh init zsh)"
-
-export typo3DatabaseName='crawler'
-export typo3DatabaseHost='127.0.0.1'
-export typo3DatabaseUsername='root'
-export typo3DatabasePassword='root'
 
 function XdebugOff() {
     export XDEBUG_SESSION=xdebug_is_great
