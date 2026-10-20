@@ -29,6 +29,12 @@ eval "$(starship init zsh)"
 setopt NO_HUP
 setopt NO_CHECK_JOBS
 
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH:$HOME/bin:$HOME/go/bin:$HOME/.config/composer/vendor/bin"
 
 function XdebugOff() {
